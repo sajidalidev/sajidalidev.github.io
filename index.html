@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sajid Ali - Senior Android & Kotlin Multiplatform Developer with 10+ years experience">
+    <title>Sajid Ali - Android Developer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        header .subtitle {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .contact-links a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .contact-links a:hover {
+            background: rgba(255,255,255,0.3);
+        }
+
+        /* About */
+        .about {
+            background: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #667eea;
+        }
+
+        .about p {
+            max-width: 800px;
+            margin: 0 auto 30px;
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat .number {
+            font-size: 2.5em;
+            font-weight: 700;
+            color: #667eea;
+        }
+
+        .stat .label {
+            color: #666;
+            font-size: 0.95em;
+        }
+
+        /* Skills */
+        .skills {
+            padding: 60px 0;
+            background: #f9f9f9;
+        }
+
+        .skills h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 50px;
+            color: #667eea;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .skill-category {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .skill-category h3 {
+            color: #764ba2;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+
+        .skill-category ul {
+            list-style: none;
+        }
+
+        .skill-category li {
+            padding: 5px 0;
+            color: #555;
+        }
+
+        .skill-category li:before {
+            content: "▸ ";
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        /* Projects */
+        .projects {
+            padding: 60px 0;
+            background: white;
+        }
+
+        .projects h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 50px;
+            color: #667eea;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .project-card {
+            background: #f9f9f9;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+
+        .project-content {
+            padding: 25px;
+        }
+
+        .project-card h3 {
+            color: #764ba2;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+
+        .project-tech {
+            color: #667eea;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+
+        .project-card p {
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .project-card ul {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+
+        .project-card li {
+            padding: 5px 0;
+            color: #555;
+            font-size: 0.95em;
+        }
+
+        .project-card li:before {
+            content: "✓ ";
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 10px;
+        }
+
+        .project-links a {
+            display: inline-block;
+            padding: 8px 15px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.9em;
+            transition: background 0.3s;
+        }
+
+        .project-links a:hover {
+            background: #764ba2;
+        }
+
+        /* Experience */
+        .experience {
+            padding: 60px 0;
+            background: #f9f9f9;
+        }
+
+        .experience h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 50px;
+            color: #667eea;
+        }
+
+        .timeline {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline-item {
+            background: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .timeline-item h3 {
+            color: #764ba2;
+            font-size: 1.4em;
+            margin-bottom: 5px;
+        }
+
+        .timeline-item .company {
+            color: #667eea;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .timeline-item .date {
+            color: #999;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+
+        .timeline-item p {
+            color: #555;
+            line-height: 1.8;
+        }
+
+        /* Contact */
+        .contact {
+            padding: 60px 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .contact p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .contact-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .contact-buttons a {
+            display: inline-block;
+            padding: 15px 30px;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: transform 0.3s;
+        }
+
+        .contact-buttons a:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            header .subtitle {
+                font-size: 1.1em;
+            }
+
+            .about h2, .skills h2, .projects h2, .experience h2, .contact h2 {
+                font-size: 2em;
+            }
+
+            .stats {
+                gap: 30px;
+            }
+
+            .stat .number {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Sajid Ali</h1>
+            <p class="subtitle">Senior Android & Kotlin Multiplatform Developer</p>
+            <p>Building cross-platform mobile applications for 10+ years</p>
+            <div class="contact-links">
+                <a href="mailto:sajidhanif865@gmail.com">📧 Email</a>
+                <a href="https://linkedin.com/in/sajidalidev" target="_blank">💼 LinkedIn</a>
+                <a href="https://github.com/sajidalidev" target="_blank">💻 GitHub</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                Senior Android Developer specializing in Kotlin Multiplatform and Android TV development. 
+                I build cross-platform applications for Android, iOS, and tvOS with expertise in streaming 
+                media, video playback optimization, and modern architecture patterns.
+            </p>
+            <div class="stats">
+                <div class="stat">
+                    <div class="number">10+</div>
+                    <div class="label">Years Experience</div>
+                </div>
+                <div class="stat">
+                    <div class="number">35+</div>
+                    <div class="label">Clients Served</div>
+                </div>
+                <div class="stat">
+                    <div class="number">5.0</div>
+                    <div class="label">Client Rating</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Mobile Development</h3>
+                    <ul>
+                        <li>Kotlin Multiplatform</li>
+                        <li>Android (Kotlin, Java)</li>
+                        <li>iOS (Swift)</li>
+                        <li>Android TV & tvOS</li>
+                        <li>Compose Multiplatform</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Video & Streaming</h3>
+                    <ul>
+                        <li>ExoPlayer</li>
+                        <li>AVPlayer</li>
+                        <li>HLS, DASH, RTSP</li>
+                        <li>Live Streaming</li>
+                        <li>DVR & Recording</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Architecture</h3>
+                    <ul>
+                        <li>MVVM</li>
+                        <li>Clean Architecture</li>
+                        <li>MVI</li>
+                        <li>Dependency Injection</li>
+                        <li>Modular Design</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend & Tools</h3>
+                    <ul>
+                        <li>Ktor (Server-side Kotlin)</li>
+                        <li>RESTful APIs</li>
+                        <li>Room, Realm</li>
+                        <li>Git, CI/CD</li>
+                        <li>Coroutines & Flow</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>LTQ & QDeluxe IPTV Players</h3>
+                        <p class="project-tech">Kotlin • ExoPlayer • Leanback • MVVM</p>
+                        <p>White-label IPTV player applications with advanced streaming features</p>
+                        <ul>
+                            <li>Multi-screen support (4 streams)</li>
+                            <li>DVR & catch-up TV</li>
+                            <li>VPN & parental controls</li>
+                            <li>OTA updates system</li>
+                            <li>10K+ installations</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Compose EPG Viewer</h3>
+                        <p class="project-tech">Jetpack Compose • Kotlin</p>
+                        <p>Modern Electronic Program Guide implementation</p>
+                        <ul>
+                            <li>Clean Compose UI</li>
+                            <li>Grid layout optimization</li>
+                            <li>Program scheduling</li>
+                            <li>Remote navigation</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/sajidalidev/compose-epg-viewer" target="_blank">View Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>OnePlayer</h3>
+                        <p class="project-tech">Kotlin • ExoPlayer</p>
+                        <p>Versatile video player with streaming capabilities</p>
+                        <ul>
+                            <li>ExoPlayer integration</li>
+                            <li>Multiple format support</li>
+                            <li>Quality selection</li>
+                            <li>Subtitle support</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/sajidalidev/OnePlayer" target="_blank">View Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>TV Guide</h3>
+                        <p class="project-tech">Kotlin • Android TV</p>
+                        <p>TV programming guide with scheduling features</p>
+                        <ul>
+                            <li>EPG implementation</li>
+                            <li>7-day scheduling</li>
+                            <li>TV-optimized UI</li>
+                            <li>Content discovery</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/sajidalidev/TV-Guide" target="_blank">View Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Senior Android Developer</h3>
+                    <div class="company">Devolic</div>
+                    <div class="date">April 2024 - Present</div>
+                    <p>
+                        Developing cross-platform mobile applications using Compose Multiplatform for 
+                        Android, iOS, and tvOS. Architecting shared business logic using Kotlin Multiplatform 
+                        to maximize code reuse and deliver production-ready features.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Freelance Mobile Developer</h3>
+                    <div class="company">Self-Employed</div>
+                    <div class="date">2014 - April 2024</div>
+                    <p>
+                        Delivered 35+ mobile applications for international clients with specialization 
+                        in Android TV streaming applications. Built IPTV solutions, custom video players, 
+                        EPG systems, and backend APIs. Maintained 5-year engagement with major client 
+                        developing white-label streaming platforms.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact">
+        <div class="container">
+            <h2>Let's Work Together</h2>
+            <p>Available for freelance projects and full-time opportunities</p>
+            <div class="contact-buttons">
+                <a href="mailto:sajidhanif865@gmail.com">Send Email</a>
+                <a href="https://linkedin.com/in/sajidalidev" target="_blank">Connect on LinkedIn</a>
+                <a href="https://github.com/sajidalidev" target="_blank">View GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Sajid Ali. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
