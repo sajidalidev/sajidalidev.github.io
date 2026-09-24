@@ -8,7 +8,7 @@ Static portfolio served by GitHub Pages. No build step is required.
 python3 -m http.server 8766 --bind 127.0.0.1
 ```
 
-Open http://127.0.0.1:8766. The Pehra support page is at `/pehra/`.
+Open http://127.0.0.1:8766. `/pehra/` redirects to the Pehra support page at https://pehra.app/support/.
 
 ## GitHub stars
 
@@ -26,4 +26,4 @@ API reference: https://docs.github.com/en/rest/repos/repos#get-a-repository
 - `assets/portfolio.css`: responsive design
 - `assets/github-stars.js`: automatic star counts
 - `assets/pehra.css`: Pehra support-page design
-- `pehra/`: preserved Pehra support and privacy content
+- `pehra/`: redirects to https://pehra.app/
