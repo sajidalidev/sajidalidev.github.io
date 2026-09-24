@@ -21,56 +21,90 @@
     <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sajidali.dev/">
-    <meta property="og:title" content="Sajid Ali - Technical Lead & Kotlin Multiplatform Engineer">
+    <meta property="og:title" content="Sajid Ali, Kotlin Multiplatform &amp; Android TV Engineer">
     <meta property="og:description" content="Technical Lead Engineer building Kotlin Multiplatform apps for Android, iOS, and tvOS. Creator of Compose Multiplatform for tvOS and Pehra, a camera viewer for Apple TV.">
     <meta property="og:site_name" content="Sajid Ali Portfolio">
-    <meta property="og:image" content="https://sajidali.dev/pehra/multiview-grid.jpg">
-    <meta property="og:image:width" content="1600">
-    <meta property="og:image:height" content="900">
-    <meta property="og:image:alt" content="Pehra on Apple TV showing a Multi View grid of live cameras">
+    <meta property="og:image" content="https://sajidali.dev/assets/og-card.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Sajid Ali, Kotlin Multiplatform and Android TV Engineer, sajidali.dev">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://sajidali.dev/">
-    <meta name="twitter:title" content="Sajid Ali - Technical Lead & Kotlin Multiplatform Engineer">
+    <meta name="twitter:title" content="Sajid Ali, Kotlin Multiplatform &amp; Android TV Engineer">
     <meta name="twitter:description" content="Technical Lead Engineer building Kotlin Multiplatform apps for Android, iOS, and tvOS. Creator of Compose Multiplatform for tvOS and Pehra, a camera viewer for Apple TV.">
-    <meta name="twitter:image" content="https://sajidali.dev/pehra/multiview-grid.jpg">
+    <meta name="twitter:image" content="https://sajidali.dev/assets/og-card.png">
+    <meta name="twitter:image:alt" content="Sajid Ali, Kotlin Multiplatform and Android TV Engineer, sajidali.dev">
 
     <!-- Favicon -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%230f100d'/><text x='50' y='52' font-family='Arial,sans-serif' font-size='46' font-weight='bold' fill='%23ffb547' text-anchor='middle' dominant-baseline='central'>SA</text></svg>">
 
-    <title>Sajid Ali | Android, Kotlin & TV</title>
+    <title>Sajid Ali, Kotlin Multiplatform &amp; Android TV Engineer</title>
 
     <!-- Structured Data -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Sajid Ali",
-        "jobTitle": "Technical Lead Engineer",
-        "url": "https://sajidali.dev",
-        "sameAs": [
-            "https://github.com/sajidalidev",
-            "https://linkedin.com/in/sajidalidev"
-        ],
-        "email": "sajid@sajidali.dev",
-        "worksFor": {
-            "@type": "Organization",
-            "name": "Devolic"
-        },
-        "alumniOf": {
-            "@type": "Organization",
-            "name": "Islamia University Bahawalpur"
-        },
-        "knowsAbout": [
-            "Kotlin Multiplatform",
-            "Android Development",
-            "iOS Development",
-            "tvOS Development",
-            "Compose Multiplatform",
-            "ExoPlayer",
-            "Video Streaming",
-            "IPTV"
+        "@graph": [
+            {
+                "@type": "Person",
+                "@id": "https://sajidali.dev/#person",
+                "name": "Sajid Ali",
+                "jobTitle": "Technical Lead Engineer",
+                "url": "https://sajidali.dev/",
+                "image": "https://sajidali.dev/assets/og-card.png",
+                "sameAs": [
+                    "https://github.com/sajidalidev",
+                    "https://linkedin.com/in/sajidalidev",
+                    "https://sajidalidev.medium.com/"
+                ],
+                "email": "sajid@sajidali.dev",
+                "worksFor": {
+                    "@type": "Organization",
+                    "name": "Devolic"
+                },
+                "alumniOf": {
+                    "@type": "Organization",
+                    "name": "Islamia University Bahawalpur"
+                },
+                "knowsAbout": [
+                    "Kotlin Multiplatform",
+                    "Android Development",
+                    "iOS Development",
+                    "tvOS Development",
+                    "Compose Multiplatform",
+                    "ExoPlayer",
+                    "Video Streaming",
+                    "IPTV"
+                ]
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://sajidali.dev/#website",
+                "url": "https://sajidali.dev/",
+                "name": "Sajid Ali",
+                "inLanguage": "en",
+                "author": { "@id": "https://sajidali.dev/#person" },
+                "publisher": { "@id": "https://sajidali.dev/#person" }
+            },
+            {
+                "@type": "SoftwareApplication",
+                "@id": "https://pehra.app/#app",
+                "name": "Pehra",
+                "description": "View IP cameras and NVR recordings on Apple TV, with no account and no cloud subscription.",
+                "operatingSystem": "tvOS",
+                "applicationCategory": "UtilitiesApplication",
+                "url": "https://pehra.app/",
+                "sameAs": "https://apps.apple.com/us/app/pehra/id6808605595",
+                "offers": {
+                    "@type": "Offer",
+                    "price": "0",
+                    "priceCurrency": "USD"
+                },
+                "author": { "@id": "https://sajidali.dev/#person" }
+            }
         ]
     }
     </script>
@@ -90,6 +124,7 @@
                 <li><a href="#pehra">Pehra</a></li>
                 <li><a href="#work">Work</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="https://sajidalidev.medium.com/" target="_blank" rel="me noopener">Blog</a></li>
                 <li><a class="nav-cta" href="#contact">Let’s talk</a></li>
             </ul>
         </nav>
@@ -98,12 +133,12 @@
     <main id="main">
         <section class="hero container" id="top" aria-labelledby="hero-title">
             <div class="hero-copy">
-                <p class="kicker"><span class="on-air" aria-hidden="true"></span>Technical Lead · Kotlin Multiplatform · Pakistan</p>
+                <p class="kicker"><span class="on-air" aria-hidden="true"></span>Sajid Ali · Technical Lead · Kotlin Multiplatform · Pakistan</p>
                 <h1 id="hero-title">Small screens.<br>Big screens.<br><em>Same craft.</em></h1>
                 <p class="hero-intro">I’m Sajid. I build Android and Kotlin Multiplatform apps, with a particular love for everything that plays on a TV.</p>
                 <div class="hero-actions">
                     <a class="button" href="#work">Explore my work <span aria-hidden="true">↓</span></a>
-                    <a class="text-link" href="https://github.com/sajidalidev">GitHub <span aria-hidden="true">↗</span></a>
+                    <a class="text-link" href="https://github.com/sajidalidev" rel="me">GitHub <span aria-hidden="true">↗</span></a>
                 </div>
             </div>
             <div class="hero-art" role="img" aria-label="Illustration of a television test card reading Hello, Apple TV, for Android, iOS and tvOS">
@@ -372,6 +407,33 @@
             </div>
         </section>
 
+        <section class="writing" id="writing" aria-labelledby="writing-title">
+            <div class="container">
+                <div class="section-heading">
+                    <div><p class="eyebrow">04 / Writing</p><h2 id="writing-title">Notes from the build.</h2></div>
+                    <p>Articles on Compose Multiplatform for tvOS and Android TV development.</p>
+                </div>
+                <div class="post-grid">
+                    <article class="post-card">
+                        <p class="post-meta"><time datetime="2026-09-14">14 Sep 2026</time> · ProAndroidDev</p>
+                        <h3><a href="https://proandroiddev.com/build-setup-targets-source-sets-and-buildsrc-for-tvos-in-a-compose-multiplatform-fork-4d9caafa30a8" target="_blank" rel="noopener">Build Setup: Targets, Source Sets and buildSrc for tvOS in a Compose Multiplatform Fork</a></h3>
+                        <p>Part of the Compose Multiplatform on tvOS series, covering the fork’s build setup.</p>
+                    </article>
+                    <article class="post-card">
+                        <p class="post-meta"><time datetime="2026-09-05">5 Sep 2026</time> · ProAndroidDev</p>
+                        <h3><a href="https://proandroiddev.com/my-journey-making-compose-multiplatform-work-on-tvos-and-what-i-learned-28744910489e" target="_blank" rel="noopener">My Journey Making Compose Multiplatform Work on tvOS, and What I Learned</a></h3>
+                        <p>Part 1 of the series: a high-level overview of the tvOS port.</p>
+                    </article>
+                    <article class="post-card">
+                        <p class="post-meta"><time datetime="2024-11-23">23 Nov 2024</time> · Medium</p>
+                        <h3><a href="https://sajidalidev.medium.com/debugging-surfaceview-issues-in-jetpack-compose-lessons-learned-from-android-tv-development-334264368967" target="_blank" rel="noopener">Debugging SurfaceView Issues in Jetpack Compose: Lessons Learned from Android TV Development</a></h3>
+                        <p>Media3 video showing a white screen while audio plays, and how it was debugged.</p>
+                    </article>
+                </div>
+                <p class="writing-more"><a class="text-link" href="https://sajidalidev.medium.com/" target="_blank" rel="me noopener">All posts on Medium <span aria-hidden="true">↗</span></a></p>
+            </div>
+        </section>
+
         <section class="contact" id="contact" aria-labelledby="contact-title">
             <div class="container contact-inner">
                 <p class="eyebrow">Have something in mind?</p>
@@ -379,8 +441,9 @@
                 <p>Open to freelance consulting, contract work, and full-time remote opportunities in Android/KMP development.</p>
                 <div class="contact-buttons">
                     <a class="button" href="mailto:sajid@sajidali.dev">Send email</a>
-                    <a class="button ghost" href="https://linkedin.com/in/sajidalidev" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
-                    <a class="button ghost" href="https://github.com/sajidalidev" target="_blank" rel="noopener noreferrer">View GitHub <span aria-hidden="true">↗</span></a>
+                    <a class="button ghost" href="https://linkedin.com/in/sajidalidev" target="_blank" rel="me noopener noreferrer">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
+                    <a class="button ghost" href="https://github.com/sajidalidev" target="_blank" rel="me noopener noreferrer">View GitHub <span aria-hidden="true">↗</span></a>
+                    <a class="button ghost" href="https://sajidalidev.medium.com/" target="_blank" rel="me noopener">Read on Medium <span aria-hidden="true">↗</span></a>
                 </div>
             </div>
         </section>

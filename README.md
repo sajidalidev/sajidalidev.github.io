@@ -26,4 +26,8 @@ API reference: https://docs.github.com/en/rest/repos/repos#get-a-repository
 - `assets/portfolio.css`: responsive design with light and dark themes (follows `prefers-color-scheme`)
 - `assets/github-stars.js`: automatic star counts
 - `pehra/index.html`: redirects to https://pehra.app/
-- `pehra/multiview-grid.jpg`: Pehra screenshot used by the portfolio card and social preview image
+- `assets/og-card.png`: 1200x630 social preview image (Open Graph / Twitter card)
+- `pehra/multiview-grid.jpg`: Pehra screenshot used by the portfolio card
+- `robots.txt`: allows all crawlers and points to the sitemap
+- `sitemap.xml`: lists the home page (`/pehra/` is a noindex redirect and is left out)
+- `404.html`: not-found page, served automatically by GitHub Pages

@@ -231,6 +231,17 @@ figcaption { margin-top: 14px; color: var(--muted); font-size: 11px; text-align:
 .company { color: var(--muted); margin: 6px 0 12px; font-size: 12px; }
 .guide-row div > p:last-child { max-width: 680px; color: var(--muted); }
 
+/* Writing */
+.writing { padding-block: clamp(72px, 10vw, 120px) 0; }
+.post-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.post-card { display: flex; flex-direction: column; gap: 14px; padding: clamp(22px, 3vw, 28px); border-radius: var(--radius); background: var(--surface); border: 1px solid var(--line); transition: border-color .25s; }
+.post-card:hover, .post-card:focus-within { border-color: color-mix(in srgb, var(--accent) 55%, var(--line)); }
+.post-meta { font-family: var(--mono); font-size: 12px; letter-spacing: .04em; text-transform: uppercase; color: var(--accent); }
+.post-card h3 { font-size: 20px; line-height: 1.25; }
+.post-card h3 a:hover { color: var(--accent); }
+.post-card > p:last-child { color: var(--muted); font-size: 15px; line-height: 1.55; }
+.writing-more { margin-top: 28px; }
+
 /* Contact */
 .contact { padding-block: clamp(88px, 12vw, 150px); text-align: center; }
 .contact-inner { display: grid; justify-items: center; }
@@ -265,6 +276,7 @@ figcaption { margin-top: 14px; color: var(--muted); font-size: 11px; text-align:
     .hero-art { max-width: 620px; }
     .spotlight-media { order: -1; }
     .skills-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .post-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 720px) {
     body { font-size: 16px; }
