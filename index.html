@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sajid Ali - Technical Lead & Kotlin Multiplatform Engineer with 10+ years experience">
+    <meta name="description" content="Sajid Ali - Technical Lead & Kotlin Multiplatform Engineer with 10+ years experience. Creator of Compose Multiplatform for tvOS and Pehra for Apple TV.">
+    <meta name="color-scheme" content="dark light">
+    <meta name="theme-color" content="#0f100d" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#f4f0e6" media="(prefers-color-scheme: light)">
+    <link rel="canonical" href="https://sajidali.dev/">
 
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HDCVKJ8803"></script>
@@ -17,137 +21,235 @@
     <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sajidali.dev/">
-    <meta property="og:title" content="Sajid Ali - Technical Lead & Kotlin Multiplatform Engineer">
-    <meta property="og:description" content="Technical Lead Engineer building Kotlin Multiplatform apps for Android, iOS, and tvOS. Creator of Compose Multiplatform for tvOS.">
+    <meta property="og:title" content="Sajid Ali, Kotlin Multiplatform &amp; Android TV Engineer">
+    <meta property="og:description" content="Technical Lead Engineer building Kotlin Multiplatform apps for Android, iOS, and tvOS. Creator of Compose Multiplatform for tvOS and Pehra, a camera viewer for Apple TV.">
     <meta property="og:site_name" content="Sajid Ali Portfolio">
+    <meta property="og:image" content="https://sajidali.dev/assets/og-card.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Sajid Ali, Kotlin Multiplatform and Android TV Engineer, sajidali.dev">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://sajidali.dev/">
-    <meta name="twitter:title" content="Sajid Ali - Technical Lead & Kotlin Multiplatform Engineer">
-    <meta name="twitter:description" content="Technical Lead Engineer building Kotlin Multiplatform apps for Android, iOS, and tvOS. Creator of Compose Multiplatform for tvOS.">
+    <meta name="twitter:title" content="Sajid Ali, Kotlin Multiplatform &amp; Android TV Engineer">
+    <meta name="twitter:description" content="Technical Lead Engineer building Kotlin Multiplatform apps for Android, iOS, and tvOS. Creator of Compose Multiplatform for tvOS and Pehra, a camera viewer for Apple TV.">
+    <meta name="twitter:image" content="https://sajidali.dev/assets/og-card.png">
+    <meta name="twitter:image:alt" content="Sajid Ali, Kotlin Multiplatform and Android TV Engineer, sajidali.dev">
 
     <!-- Favicon -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%232e5144'/><text x='50' y='50' font-family='Arial,sans-serif' font-size='50' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='central'>SA</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%230f100d'/><text x='50' y='52' font-family='Arial,sans-serif' font-size='46' font-weight='bold' fill='%23ffb547' text-anchor='middle' dominant-baseline='central'>SA</text></svg>">
 
-    <title>Sajid Ali | Android, Kotlin & TV</title>
+    <title>Sajid Ali, Kotlin Multiplatform &amp; Android TV Engineer</title>
 
     <!-- Structured Data -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Sajid Ali",
-        "jobTitle": "Technical Lead Engineer",
-        "url": "https://sajidali.dev",
-        "sameAs": [
-            "https://github.com/sajidalidev",
-            "https://linkedin.com/in/sajidalidev"
-        ],
-        "email": "sajid@sajidali.dev",
-        "worksFor": {
-            "@type": "Organization",
-            "name": "Devolic"
-        },
-        "alumniOf": {
-            "@type": "Organization",
-            "name": "Islamia University Bahawalpur"
-        },
-        "knowsAbout": [
-            "Kotlin Multiplatform",
-            "Android Development",
-            "iOS Development",
-            "tvOS Development",
-            "Compose Multiplatform",
-            "ExoPlayer",
-            "Video Streaming",
-            "IPTV"
+        "@graph": [
+            {
+                "@type": "Person",
+                "@id": "https://sajidali.dev/#person",
+                "name": "Sajid Ali",
+                "jobTitle": "Technical Lead Engineer",
+                "url": "https://sajidali.dev/",
+                "image": "https://sajidali.dev/assets/og-card.png",
+                "sameAs": [
+                    "https://github.com/sajidalidev",
+                    "https://linkedin.com/in/sajidalidev",
+                    "https://sajidalidev.medium.com/"
+                ],
+                "email": "sajid@sajidali.dev",
+                "worksFor": {
+                    "@type": "Organization",
+                    "name": "Devolic"
+                },
+                "alumniOf": {
+                    "@type": "Organization",
+                    "name": "Islamia University Bahawalpur"
+                },
+                "knowsAbout": [
+                    "Kotlin Multiplatform",
+                    "Android Development",
+                    "iOS Development",
+                    "tvOS Development",
+                    "Compose Multiplatform",
+                    "ExoPlayer",
+                    "Video Streaming",
+                    "IPTV"
+                ]
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://sajidali.dev/#website",
+                "url": "https://sajidali.dev/",
+                "name": "Sajid Ali",
+                "inLanguage": "en",
+                "author": { "@id": "https://sajidali.dev/#person" },
+                "publisher": { "@id": "https://sajidali.dev/#person" }
+            },
+            {
+                "@type": "SoftwareApplication",
+                "@id": "https://pehra.app/#app",
+                "name": "Pehra",
+                "description": "View IP cameras and NVR recordings on Apple TV, with no account and no cloud subscription.",
+                "operatingSystem": "tvOS",
+                "applicationCategory": "UtilitiesApplication",
+                "url": "https://pehra.app/",
+                "sameAs": "https://apps.apple.com/us/app/pehra/id6808605595",
+                "offers": {
+                    "@type": "Offer",
+                    "price": "0",
+                    "priceCurrency": "USD"
+                },
+                "author": { "@id": "https://sajidali.dev/#person" }
+            }
         ]
     }
     </script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=IBM+Plex+Mono:wght@400;500&display=swap">
     <link rel="stylesheet" href="/assets/portfolio.css">
     <script src="/assets/github-stars.js" defer></script>
 </head>
 <body>
-    <a class="skip-link" href="#work">Skip to work</a>
-    <nav class="container nav" aria-label="Main navigation">
-        <a class="wordmark" href="#">sajidali<span>.dev</span></a>
-        <div><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Let’s talk <span aria-hidden="true">↗</span></a></div>
-    </nav>
-    <main>
-    <header class="hero container">
-        <div class="hero-copy">
-            <p class="eyebrow"><span class="status-dot"></span> TECHNICAL LEAD · KOTLIN MULTIPLATFORM · PAKISTAN</p>
-            <h1>Small screens.<br>Big screens.<br><em>Same craft.</em></h1>
-            <p class="hero-intro">I’m Sajid. I build Android and Kotlin Multiplatform apps, with a particular love for everything that plays on a TV.</p>
-            <div class="hero-actions"><a class="button" href="#work">Explore my work <span aria-hidden="true">↓</span></a><a class="text-link" href="https://github.com/sajidalidev">GitHub ↗</a></div>
-        </div>
-        <div class="hero-art" role="img" aria-label="Illustration of a television and phone sharing a Kotlin interface">
-            <div class="art-top"><span>ONE CODEBASE. MORE POSSIBILITIES.</span><span>01 / KMP</span></div>
-            <div class="television"><div class="screen"><span class="screen-label">HELLO, APPLE TV.</span><div class="compose-mark">K<span>↗</span></div><div class="screen-tiles"><i></i><i></i><i></i></div></div></div>
-            <div class="tv-foot"></div><div class="phone"><div class="phone-speaker"></div><span>K<span class="phone-arrow">↗</span></span><i></i><i></i></div>
-            <div class="art-bottom"><span>Android · iOS · tvOS</span><span class="art-plus">+</span></div>
-        </div>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+        <nav class="container nav" aria-label="Main navigation">
+            <a class="wordmark" href="#top">sajidali<span>.dev</span></a>
+            <ul>
+                <li><a href="#pehra">Pehra</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="https://sajidalidev.medium.com/" target="_blank" rel="me noopener">Blog</a></li>
+                <li><a class="nav-cta" href="#contact">Let’s talk</a></li>
+            </ul>
+        </nav>
     </header>
-    <div class="container intro-strip"><span>10+ years building apps</span><span>35+ clients served</span><span>100+ projects delivered</span></div>
-    <!-- Projects -->
-    <section class="projects" id="work">
-        <div class="container">
-            <div class="section-heading"><div><p class="eyebrow">01 / SELECTED WORK</p><h2>Built to be used.</h2></div><p>Open-source tools and apps.<br>From the framework to the living room.</p></div>
-            <div class="project-grid">
-                <!-- Open Source Libraries -->
-                <div class="project-card featured">
-                    <div class="project-content">
-                        <span class="project-badge badge-opensource">Open Source</span>
-                        <a class="github-stars" data-repo="sajidalidev/compose-tvos" href="https://github.com/sajidalidev/compose-tvos/stargazers" aria-label="View compose-tvos stargazers"><span aria-hidden="true">☆</span> <span data-star-count>GitHub stars</span></a>
-                        <h3>Compose Multiplatform for tvOS</h3>
 
-                        <p class="project-tech">Kotlin Multiplatform • Compose • tvOS</p>
-                        <p>Bringing Compose Multiplatform to Apple TV. A published toolchain, Gradle plugin, and library ecosystem for building tvOS apps in Kotlin.</p>
-                        <ul>
-                            <li>Pioneering tvOS support for Compose ecosystem</li>
-                            <li>Full Compose runtime & foundation libraries</li>
-                            <li>Production-ready core features operational</li>
-                            <li>Gradle plugin for tvOS dependency resolution</li>
-                            <li>100% open-source contribution to KMP community</li>
-                        </ul>
+    <main id="main">
+        <section class="hero container" id="top" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <p class="kicker"><span class="on-air" aria-hidden="true"></span>Sajid Ali · Technical Lead · Kotlin Multiplatform · Pakistan</p>
+                <h1 id="hero-title">Small screens.<br>Big screens.<br><em>Same craft.</em></h1>
+                <p class="hero-intro">I’m Sajid. I build Android and Kotlin Multiplatform apps, with a particular love for everything that plays on a TV.</p>
+                <div class="hero-actions">
+                    <a class="button" href="#work">Explore my work <span aria-hidden="true">↓</span></a>
+                    <a class="text-link" href="https://github.com/sajidalidev" rel="me">GitHub <span aria-hidden="true">↗</span></a>
+                </div>
+            </div>
+            <div class="hero-art" role="img" aria-label="Illustration of a television test card reading Hello, Apple TV, for Android, iOS and tvOS">
+                <div class="tv">
+                    <div class="tv-screen">
+                        <div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                        <div class="bars-low"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                        <div class="test-disc"><span class="disc-k">K</span><span class="disc-label">Hello, Apple TV.</span></div>
+                        <span class="osd osd-tl">CH 01 · KMP</span>
+                        <span class="osd osd-tr"><span class="rec" aria-hidden="true"></span>LIVE</span>
+                    </div>
+                </div>
+                <div class="tv-caption"><span>One codebase. More possibilities.</span><span>Android · iOS · tvOS</span></div>
+            </div>
+        </section>
+
+        <div class="container stats" role="list">
+            <p role="listitem"><strong>10+</strong> years building apps</p>
+            <p role="listitem"><strong>35+</strong> clients served</p>
+            <p role="listitem"><strong>100+</strong> projects delivered</p>
+        </div>
+
+        <section class="spotlight" id="pehra" aria-labelledby="pehra-title">
+            <div class="container spotlight-inner">
+                <div class="spotlight-copy">
+                    <p class="eyebrow">Now shipping · Indie app</p>
+                    <h2 id="pehra-title">Pehra<span class="version">v1.0.1</span></h2>
+                    <p class="spotlight-lede">Your IP cameras and NVR recordings, on the big screen. A free Apple TV app, live on the App Store.</p>
+                    <p>Pehra connects directly to cameras on your local network, with no account and no cloud subscription. It is built in Kotlin with Compose Multiplatform, running on tvOS through my own <a class="inline-link" href="#compose-tvos">Compose Multiplatform for tvOS</a> port, with video playback via libVLC.</p>
+                    <ul class="feature-list">
+                        <li>Live view and a Multi View grid</li>
+                        <li>Snapshots and recording playback</li>
+                        <li>RTSP / ONVIF, Dahua NVRs, TP-Link Tapo</li>
+                        <li>No account, no cloud subscription</li>
+                    </ul>
+                    <p class="project-tech">Kotlin · Compose Multiplatform · tvOS · libVLC</p>
+                    <div class="spotlight-actions">
+                        <a class="button" href="https://apps.apple.com/us/app/pehra/id6808605595" target="_blank" rel="noopener noreferrer">Get it on the App Store <span aria-hidden="true">↗</span></a>
+                        <a class="text-link" href="https://pehra.app/" target="_blank" rel="noopener noreferrer">pehra.app <span aria-hidden="true">↗</span></a>
+                    </div>
+                </div>
+                <figure class="spotlight-media">
+                    <div class="bezel">
+                        <img src="/pehra/multiview-grid.jpg" width="1600" height="900" loading="lazy" decoding="async" alt="Pehra on Apple TV showing a Multi View grid of live camera feeds">
+                    </div>
+                    <figcaption>Multi View on Apple TV</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="projects" id="work" aria-labelledby="work-title">
+            <div class="container">
+                <div class="section-heading">
+                    <div><p class="eyebrow">01 / Selected work</p><h2 id="work-title">Built to be used.</h2></div>
+                    <p>Open-source tools and apps. From the framework to the living room.</p>
+                </div>
+                <div class="project-grid">
+                    <article class="project-card featured" id="compose-tvos">
+                        <div class="card-top">
+                            <span class="project-badge">Open Source</span>
+                            <a class="github-stars" data-repo="sajidalidev/compose-tvos" href="https://github.com/sajidalidev/compose-tvos/stargazers" aria-label="View compose-tvos stargazers"><span aria-hidden="true">☆</span> <span data-star-count>GitHub stars</span></a>
+                        </div>
+                        <div class="featured-body">
+                            <div>
+                                <h3>Compose Multiplatform for tvOS</h3>
+                                <p class="project-tech">Kotlin Multiplatform · Compose · tvOS</p>
+                                <p>Bringing Compose Multiplatform to Apple TV. A published toolchain, Gradle plugin, and library ecosystem for building tvOS apps in Kotlin. It powers <a class="inline-link" href="#pehra">Pehra</a> on the App Store.</p>
+                            </div>
+                            <ul>
+                                <li>Pioneering tvOS support for Compose ecosystem</li>
+                                <li>Full Compose runtime &amp; foundation libraries</li>
+                                <li>Production-ready core features operational</li>
+                                <li>Gradle plugin for tvOS dependency resolution</li>
+                                <li>100% open-source contribution to KMP community</li>
+                            </ul>
+                        </div>
                         <div class="project-links">
-                            <a href="https://github.com/sajidalidev/compose-tvos">Explore the project ↗</a>
+                            <a href="https://github.com/sajidalidev/compose-tvos">Explore the project <span aria-hidden="true">↗</span></a>
                             <a href="https://github.com/sajidalidev/compose-multiplatform-core" target="_blank" rel="noopener noreferrer">Core</a>
                             <a href="https://github.com/sajidalidev/compose-multiplatform" target="_blank" rel="noopener noreferrer">Runtime</a>
                         </div>
-                    </div>
-                </div>
+                    </article>
 
-                <div class="project-card">
-                    <div class="project-content">
-                        <span class="project-badge badge-opensource">Open Source</span>
-                        <a class="github-stars" data-repo="sajidalidev/compose-epg-viewer" href="https://github.com/sajidalidev/compose-epg-viewer/stargazers" aria-label="View compose-epg-viewer stargazers"><span aria-hidden="true">☆</span> <span data-star-count>GitHub stars</span></a>
+                    <article class="project-card">
+                        <div class="card-top">
+                            <span class="project-badge">Open Source</span>
+                            <a class="github-stars" data-repo="sajidalidev/compose-epg-viewer" href="https://github.com/sajidalidev/compose-epg-viewer/stargazers" aria-label="View compose-epg-viewer stargazers"><span aria-hidden="true">☆</span> <span data-star-count>GitHub stars</span></a>
+                        </div>
                         <h3>Compose EPG Viewer</h3>
-
-                        <p class="project-tech">Compose Multiplatform • KMP • Kotlin</p>
-                        <p>Cross-platform TV Guide component for Android, iOS, and Desktop</p>
+                        <p class="project-tech">Compose Multiplatform · KMP · Kotlin</p>
+                        <p>Cross-platform TV Guide component for Android, iOS, and Desktop.</p>
                         <ul>
                             <li>Multiplatform support (Android/iOS/Desktop)</li>
-                            <li>Advanced scrolling & fast-scroll</li>
+                            <li>Advanced scrolling &amp; fast-scroll</li>
                             <li>Auto-scroll to current time</li>
                             <li>Fully customizable composable API</li>
                             <li>Real-time "Now" indicator</li>
                         </ul>
                         <div class="project-links">
-                            <a href="https://github.com/sajidalidev/compose-epg-viewer" target="_blank" rel="noopener noreferrer">View Code</a>
+                            <a href="https://github.com/sajidalidev/compose-epg-viewer" target="_blank" rel="noopener noreferrer">View code <span aria-hidden="true">↗</span></a>
                         </div>
-                    </div>
-                </div>
+                    </article>
 
-                <div class="project-card">
-                    <div class="project-content">
-                        <span class="project-badge badge-opensource">Open Source</span>
-                        <a class="github-stars" data-repo="sajidalidev/OnePlayer" href="https://github.com/sajidalidev/OnePlayer/stargazers" aria-label="View OnePlayer stargazers"><span aria-hidden="true">☆</span> <span data-star-count>GitHub stars</span></a>
+                    <article class="project-card">
+                        <div class="card-top">
+                            <span class="project-badge">Open Source</span>
+                            <a class="github-stars" data-repo="sajidalidev/OnePlayer" href="https://github.com/sajidalidev/OnePlayer/stargazers" aria-label="View OnePlayer stargazers"><span aria-hidden="true">☆</span> <span data-star-count>GitHub stars</span></a>
+                        </div>
                         <h3>OnePlayer</h3>
-                        <p class="project-tech">Kotlin • ExoPlayer • LibVLC • IJKPlayer</p>
-                        <p>Abstract video player library with multiple engine support</p>
+                        <p class="project-tech">Kotlin · ExoPlayer · LibVLC · IJKPlayer</p>
+                        <p>Abstract video player library with multiple engine support.</p>
                         <ul>
                             <li>Unified API for multiple players</li>
                             <li>ExoPlayer, LibVLC, IJKPlayer adapters</li>
@@ -156,180 +258,201 @@
                             <li>No vendor lock-in</li>
                         </ul>
                         <div class="project-links">
-                            <a href="https://github.com/sajidalidev/OnePlayer" target="_blank" rel="noopener noreferrer">View Code</a>
+                            <a href="https://github.com/sajidalidev/OnePlayer" target="_blank" rel="noopener noreferrer">View code <span aria-hidden="true">↗</span></a>
                         </div>
-                    </div>
-                </div>
+                    </article>
 
-                <div class="project-card">
-                    <div class="project-content">
-                        <span class="project-badge badge-opensource">Open Source</span>
-                        <a class="github-stars" data-repo="sajidalidev/TV-Guide" href="https://github.com/sajidalidev/TV-Guide/stargazers" aria-label="View TV-Guide stargazers"><span aria-hidden="true">☆</span> <span data-star-count>GitHub stars</span></a>
+                    <article class="project-card">
+                        <div class="card-top">
+                            <span class="project-badge">Open Source</span>
+                            <a class="github-stars" data-repo="sajidalidev/TV-Guide" href="https://github.com/sajidalidev/TV-Guide/stargazers" aria-label="View TV-Guide stargazers"><span aria-hidden="true">☆</span> <span data-star-count>GitHub stars</span></a>
+                        </div>
                         <h3>TV Guide Viewer</h3>
-                        <p class="project-tech">Kotlin • Android TV • Custom Views</p>
-                        <p>Customizable Android TV EPG library for production apps</p>
+                        <p class="project-tech">Kotlin · Android TV · Custom Views</p>
+                        <p>Customizable Android TV EPG library for production apps.</p>
                         <ul>
                             <li>Supports 300+ channels</li>
                             <li>Flexible DataProvider pattern</li>
                             <li>Highly customizable XML attributes</li>
                             <li>Timeline visualization</li>
-                            <li>Event handling & focus management</li>
+                            <li>Event handling &amp; focus management</li>
                         </ul>
                         <div class="project-links">
-                            <a href="https://github.com/sajidalidev/TV-Guide" target="_blank" rel="noopener noreferrer">View Code</a>
+                            <a href="https://github.com/sajidalidev/TV-Guide" target="_blank" rel="noopener noreferrer">View code <span aria-hidden="true">↗</span></a>
                         </div>
-                    </div>
-                </div>
+                    </article>
 
-                <!-- Client Projects -->
-                <div class="project-card">
-                    <div class="project-content">
-                        <span class="project-badge badge-client">Client Work</span>
-                        <h3>LTQ & QDeluxe</h3>
-                        <p class="project-tech">Kotlin • ExoPlayer • Leanback • MVVM</p>
-                        <p>White-label IPTV streaming platforms</p>
+                    <article class="project-card client">
+                        <div class="card-top">
+                            <span class="project-badge badge-client">Client Work</span>
+                        </div>
+                        <h3>LTQ &amp; QDeluxe</h3>
+                        <p class="project-tech">Kotlin · ExoPlayer · Leanback · MVVM</p>
+                        <p>White-label IPTV streaming platforms.</p>
                         <ul>
                             <li>10,000+ installations</li>
                             <li>Multi-screen support (4 streams)</li>
-                            <li>DVR & catch-up TV</li>
-                            <li>Built-in VPN & parental controls</li>
+                            <li>DVR &amp; catch-up TV</li>
+                            <li>Built-in VPN &amp; parental controls</li>
                             <li>OTA update system</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about" aria-labelledby="about-title">
+            <div class="container about-grid">
+                <div>
+                    <p class="eyebrow">02 / The developer</p>
+                    <h2 id="about-title">From shared code<br>to a great experience.</h2>
+                </div>
+                <div class="about-copy">
+                    <p>Technical Lead Engineer at Devolic, specializing in Kotlin Multiplatform and streaming media. I build cross-platform applications for Android, iOS, and tvOS with expertise in streaming media, video playback optimization, and modern architecture patterns. Across 100+ projects for 35+ clients, I’ve worked from shared application architecture to TV interfaces and Ktor backends.</p>
+                    <div class="current-focus">
+                        <h3><span class="rec" aria-hidden="true"></span>Currently building</h3>
+                        <p>Pioneering <strong>Compose Multiplatform for tvOS</strong>, bringing declarative UI development to Apple TV. Working across rendering, remote input, and the libraries that make a complete tvOS development experience. This work opens up native Apple TV app development to the entire Kotlin Multiplatform ecosystem.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills" aria-labelledby="skills-title">
+            <div class="container">
+                <p class="eyebrow">The toolkit</p>
+                <h2 id="skills-title">Built on experience.</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Mobile Development</h3>
+                        <ul>
+                            <li>Kotlin Multiplatform</li>
+                            <li>Android (Kotlin, Java)</li>
+                            <li>iOS (Swift)</li>
+                            <li>Android TV &amp; tvOS</li>
+                            <li>Compose Multiplatform</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Video &amp; Streaming</h3>
+                        <ul>
+                            <li>ExoPlayer</li>
+                            <li>AVPlayer</li>
+                            <li>HLS, DASH, RTSP</li>
+                            <li>Live Streaming</li>
+                            <li>DVR &amp; Recording</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Architecture</h3>
+                        <ul>
+                            <li>MVVM</li>
+                            <li>Clean Architecture</li>
+                            <li>MVI</li>
+                            <li>Dependency Injection</li>
+                            <li>Modular Design</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Backend &amp; Tools</h3>
+                        <ul>
+                            <li>Ktor (Server-side Kotlin)</li>
+                            <li>RESTful APIs</li>
+                            <li>Room, Realm</li>
+                            <li>Git, CI/CD</li>
+                            <li>Coroutines &amp; Flow</li>
                         </ul>
                     </div>
                 </div>
-
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About -->
-    <section class="about" id="about">
-        <div class="container">
-            <p class="eyebrow">02 / THE DEVELOPER</p><h2>From shared code<br>to a great experience.</h2>
-            <p>
-                Technical Lead Engineer at Devolic, specializing in Kotlin Multiplatform and streaming media.
-                I build cross-platform applications for Android, iOS, and tvOS with expertise in streaming
-                media, video playback optimization, and modern architecture patterns. Across 100+ projects for
-                35+ clients, I’ve worked from shared application architecture to TV interfaces and Ktor backends.
-            </p>
-            <div class="current-focus">
-                <h3>Currently building</h3>
-                <p>
-                    Pioneering <strong>Compose Multiplatform for tvOS</strong> - bringing declarative UI development to Apple TV.
-                    Working across rendering, remote input, and the libraries that make a complete tvOS development experience.
-                    This work opens up native Apple TV app development to the entire Kotlin Multiplatform ecosystem.
-                </p>
+        <section class="experience" aria-labelledby="experience-title">
+            <div class="container">
+                <p class="eyebrow">03 / Experience</p>
+                <h2 id="experience-title">A decade of shipping.</h2>
+                <ol class="guide">
+                    <li class="guide-row now">
+                        <p class="date">January 2026 - Present</p>
+                        <div>
+                            <h3>Technical Lead Engineer</h3>
+                            <p class="company">Devolic · Full-time · Remote</p>
+                            <p>Leading full-stack development of applications across Android, iOS, and tvOS. Pioneered Compose Multiplatform support for Apple TV, bringing a shared Kotlin UI to another screen.</p>
+                        </div>
+                    </li>
+                    <li class="guide-row">
+                        <p class="date">April 2024 - December 2025</p>
+                        <div>
+                            <h3>Senior Android Developer</h3>
+                            <p class="company">Devolic · Full-time · Remote</p>
+                            <p>Built Android TV applications with Jetpack Compose, custom TV guides, and remote navigation. Integrated ExoPlayer, libVLC, and FFplay for live and on-demand video, and optimized guide loading for 10,000+ channels.</p>
+                        </div>
+                    </li>
+                    <li class="guide-row">
+                        <p class="date">January 2016 - February 2026</p>
+                        <div>
+                            <h3>Kotlin Application Developer</h3>
+                            <p class="company">Freelance · Remote</p>
+                            <p>Delivered 35+ Android and TV projects for international clients. Built streaming apps with custom players, DVR, multi-screen playback, and EPGs, and migrated legacy applications to Kotlin and Jetpack Compose.</p>
+                        </div>
+                    </li>
+                    <li class="guide-row">
+                        <p class="date">June 2014 - June 2015</p>
+                        <div>
+                            <h3>Mobile Application Developer</h3>
+                            <p class="company">Micro Tech Soft</p>
+                            <p>Mobile application development in Bahawalpur, Pakistan.</p>
+                        </div>
+                    </li>
+                </ol>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Skills -->
-    <section class="skills">
-        <div class="container">
-            <p class="eyebrow">THE TOOLKIT</p><h2>Built on experience.</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Mobile Development</h3>
-                    <ul>
-                        <li>Kotlin Multiplatform</li>
-                        <li>Android (Kotlin, Java)</li>
-                        <li>iOS (Swift)</li>
-                        <li>Android TV & tvOS</li>
-                        <li>Compose Multiplatform</li>
-                    </ul>
+        <section class="writing" id="writing" aria-labelledby="writing-title">
+            <div class="container">
+                <div class="section-heading">
+                    <div><p class="eyebrow">04 / Writing</p><h2 id="writing-title">Notes from the build.</h2></div>
+                    <p>Articles on Compose Multiplatform for tvOS and Android TV development.</p>
                 </div>
-                <div class="skill-category">
-                    <h3>Video & Streaming</h3>
-                    <ul>
-                        <li>ExoPlayer</li>
-                        <li>AVPlayer</li>
-                        <li>HLS, DASH, RTSP</li>
-                        <li>Live Streaming</li>
-                        <li>DVR & Recording</li>
-                    </ul>
+                <div class="post-grid">
+                    <article class="post-card">
+                        <p class="post-meta"><time datetime="2026-09-14">14 Sep 2026</time> · ProAndroidDev</p>
+                        <h3><a href="https://proandroiddev.com/build-setup-targets-source-sets-and-buildsrc-for-tvos-in-a-compose-multiplatform-fork-4d9caafa30a8" target="_blank" rel="noopener">Build Setup: Targets, Source Sets and buildSrc for tvOS in a Compose Multiplatform Fork</a></h3>
+                        <p>Part of the Compose Multiplatform on tvOS series, covering the fork’s build setup.</p>
+                    </article>
+                    <article class="post-card">
+                        <p class="post-meta"><time datetime="2026-09-05">5 Sep 2026</time> · ProAndroidDev</p>
+                        <h3><a href="https://proandroiddev.com/my-journey-making-compose-multiplatform-work-on-tvos-and-what-i-learned-28744910489e" target="_blank" rel="noopener">My Journey Making Compose Multiplatform Work on tvOS, and What I Learned</a></h3>
+                        <p>Part 1 of the series: a high-level overview of the tvOS port.</p>
+                    </article>
+                    <article class="post-card">
+                        <p class="post-meta"><time datetime="2024-11-23">23 Nov 2024</time> · Medium</p>
+                        <h3><a href="https://sajidalidev.medium.com/debugging-surfaceview-issues-in-jetpack-compose-lessons-learned-from-android-tv-development-334264368967" target="_blank" rel="noopener">Debugging SurfaceView Issues in Jetpack Compose: Lessons Learned from Android TV Development</a></h3>
+                        <p>Media3 video showing a white screen while audio plays, and how it was debugged.</p>
+                    </article>
                 </div>
-                <div class="skill-category">
-                    <h3>Architecture</h3>
-                    <ul>
-                        <li>MVVM</li>
-                        <li>Clean Architecture</li>
-                        <li>MVI</li>
-                        <li>Dependency Injection</li>
-                        <li>Modular Design</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Backend & Tools</h3>
-                    <ul>
-                        <li>Ktor (Server-side Kotlin)</li>
-                        <li>RESTful APIs</li>
-                        <li>Room, Realm</li>
-                        <li>Git, CI/CD</li>
-                        <li>Coroutines & Flow</li>
-                    </ul>
-                </div>
+                <p class="writing-more"><a class="text-link" href="https://sajidalidev.medium.com/" target="_blank" rel="me noopener">All posts on Medium <span aria-hidden="true">↗</span></a></p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Experience -->
-    <section class="experience">
-        <div class="container">
-            <p class="eyebrow">03 / EXPERIENCE</p><h2>A decade of shipping.</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h3>Technical Lead Engineer</h3>
-                    <div class="company">Devolic · Full-time · Remote</div>
-                    <div class="date">January 2026 - Present</div>
-                    <p>Leading full-stack development of applications across Android, iOS, and tvOS.
-                        Pioneered Compose Multiplatform support for Apple TV, bringing a shared Kotlin UI
-                        to another screen.</p>
-                </div>
-                <div class="timeline-item">
-                    <h3>Senior Android Developer</h3>
-                    <div class="company">Devolic · Full-time · Remote</div>
-                    <div class="date">April 2024 - December 2025</div>
-                    <p>Built Android TV applications with Jetpack Compose, custom TV guides, and remote
-                        navigation. Integrated ExoPlayer, libVLC, and FFplay for live and on-demand video,
-                        and optimized guide loading for 10,000+ channels.</p>
-                </div>
-                <div class="timeline-item">
-                    <h3>Kotlin Application Developer</h3>
-                    <div class="company">Freelance · Remote</div>
-                    <div class="date">January 2016 - February 2026</div>
-                    <p>Delivered 35+ Android and TV projects for international clients. Built streaming
-                        apps with custom players, DVR, multi-screen playback, and EPGs, and migrated
-                        legacy applications to Kotlin and Jetpack Compose.</p>
-                </div>
-                <div class="timeline-item">
-                    <h3>Mobile Application Developer</h3>
-                    <div class="company">Micro Tech Soft</div>
-                    <div class="date">June 2014 - June 2015</div>
-                    <p>Mobile application development in Bahawalpur, Pakistan.</p>
+        <section class="contact" id="contact" aria-labelledby="contact-title">
+            <div class="container contact-inner">
+                <p class="eyebrow">Have something in mind?</p>
+                <h2 id="contact-title">Let’s build<br><em>something good.</em></h2>
+                <p>Open to freelance consulting, contract work, and full-time remote opportunities in Android/KMP development.</p>
+                <div class="contact-buttons">
+                    <a class="button" href="mailto:sajid@sajidali.dev">Send email</a>
+                    <a class="button ghost" href="https://linkedin.com/in/sajidalidev" target="_blank" rel="me noopener noreferrer">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
+                    <a class="button ghost" href="https://github.com/sajidalidev" target="_blank" rel="me noopener noreferrer">View GitHub <span aria-hidden="true">↗</span></a>
+                    <a class="button ghost" href="https://sajidalidev.medium.com/" target="_blank" rel="me noopener">Read on Medium <span aria-hidden="true">↗</span></a>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <p class="eyebrow">HAVE SOMETHING IN MIND?</p><h2>Let’s build<br><em>something good.</em></h2>
-            <p>Open to freelance consulting, contract work, and full-time remote opportunities in Android/KMP development</p>
-            <div class="contact-buttons">
-                <a href="mailto:sajid@sajidali.dev">Send Email</a>
-                <a href="https://linkedin.com/in/sajidalidev" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
-                <a href="https://github.com/sajidalidev" target="_blank" rel="noopener noreferrer">View GitHub</a>
-            </div>
-        </div>
-    </section>
-
+        </section>
     </main>
-    <!-- Footer -->
-    <footer>
+
+    <footer class="site-footer">
         <div class="container">
             <p>&copy; 2026 Sajid Ali. All rights reserved.</p>
-            <p><a href="https://pehra.app/">Pehra for Apple TV &ndash; support</a></p>
+            <p class="sign-off">sajidali<span>.dev</span></p>
         </div>
     </footer>
 </body>
